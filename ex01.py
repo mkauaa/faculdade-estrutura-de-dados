@@ -28,3 +28,5 @@ print(f'Lista: {lista}')
 
 print(f'O maior valor gerado foi {numMaior} e se encontra na posição {indiceMaior + 1}.')
 print(f'O menor valor gerado foi {numMenor} e se encontra na posição {indiceMenor + 1}.')
+
+print()

@@ -25,6 +25,3 @@ for num in sequencia:
         print(f'{num}', end=' -> ')
 
 print('Fim. \n')
-
-    
-

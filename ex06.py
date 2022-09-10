@@ -47,3 +47,5 @@ while True:
         break
 
 print(f'\nO total arrecadado de {cont} pedidos equivale a R${total:.2f}.')
+
+print()

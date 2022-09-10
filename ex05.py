@@ -36,3 +36,5 @@ while True:
     print()
 
 print(f'O total do pedido equivale a R${consumo:.2f}.')
+
+print()

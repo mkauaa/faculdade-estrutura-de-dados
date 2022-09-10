@@ -49,4 +49,5 @@ elif tupla1[1] == tupla2[1]:
 
         elif tupla1[0] > tupla2[0]:
             print(f'{tupla1[0]} ºF > {tupla2[0]} ºF')
-            
+
+print()
