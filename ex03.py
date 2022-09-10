@@ -13,21 +13,28 @@ sem4 = [24, 26, 25, 25, 27, 25, 24]
 mes = sem1 + sem2 + sem3 + sem4
 
 mediaMes = sum(mes) / len(mes)
+print(mediaMes)
 
-acima = 0
+acima = [0, 0, 0, 0]
 
-inicio = 0
-fim = 7
+for temp in sem1:
+    if temp > mediaMes:
+        acima[0] += 1
 
-semana = 0
+for temp in sem2:
+    if temp > mediaMes:
+        acima[1] += 1
 
-while semana <= 4:
-    for dia, temp in enumerate(mes):
-        if inicio < dia < fim:         
-            if temp > mediaMes:
-                acima += 1
-            if acima > 3:
-                print(f'A semana {semana} possui {acima} dias com temperatura acima da média do mês. ')        
-    semana += 1 
-    inicio += 7
-    fim += 7
+for temp in sem3:
+    if temp > mediaMes:
+        acima[2] += 1
+
+for temp in sem4:
+    if temp > mediaMes:
+        acima[3] += 1
+
+for cont in range(0, 4):
+    print(f'A semana {cont + 1} teve {acima[cont]} temperaturas acima da média.')
+
+
+

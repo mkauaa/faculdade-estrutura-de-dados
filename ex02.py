@@ -20,10 +20,11 @@ print('Devolvendo a sequência informada: ')
 for num in sequencia:
     if num == max(sequencia):
         print(f'{num} (Maior!)', end=' -> ')
+
     else:
         print(f'{num}', end=' -> ')
 
-print('Fim.\n')
+print('Fim. \n')
 
     
 
