@@ -2,22 +2,30 @@
 # elemento dessa sequência. A sequência termina quando for digitado o número (0) zero. Ao
 # final, imprimir a lista resultante.
 
+from time import sleep
+
 sequencia = list()
 
 while True:
     num = float(input('Informe um número: '))
+
     if num == 0:
         break
+
     else:
         sequencia.append(num)
+
+print("~" * 32)
 
 print('Devolvendo a sequência informada: ')
 
 for num in sequencia:
     if num == max(sequencia):
-        print(f'{num} (MAIOR!!)', end=', ')
+        print(f'{num} (Maior!)', end=' -> ')
     else:
-        print(f'{num}', end=', ')
-    if num == sequencia[-1]:
-        print('FIM!')
+        print(f'{num}', end=' -> ')
+
+print('Fim.\n')
+
+    
 
