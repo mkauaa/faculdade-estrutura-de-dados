@@ -2,8 +2,6 @@
 # elemento dessa sequência. A sequência termina quando for digitado o número (0) zero. Ao
 # final, imprimir a lista resultante.
 
-from time import sleep
-
 sequencia = list()
 
 while True:
