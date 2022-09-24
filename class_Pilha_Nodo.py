@@ -31,5 +31,7 @@ class Pilha:
             print('É impossível remover valores de uma pilha vazia.')
         
         else:
+            print(f'O elemento {self.topo} foi removido.')
             self.topo = self.topo.anterior
             self.tamanho -= 1
+            
