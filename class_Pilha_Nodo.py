@@ -4,7 +4,7 @@ class Nodo:
         self.anterior = nodo_anterior
 
     def __repr__(self):
-        return '%s -> %s' % (self.dado, self.anterior)
+        return f'{self.dado} -> {self.anterior}'
 
 class Pilha:
     def __init__(self):
@@ -31,7 +31,8 @@ class Pilha:
             print('É impossível remover valores de uma pilha vazia.')
         
         else:
-            print(f'O elemento {self.topo} foi removido.')
+            removido = self.topo
             self.topo = self.topo.anterior
             self.tamanho -= 1
+            return removido
             
