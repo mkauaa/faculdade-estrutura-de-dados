@@ -1,6 +1,3 @@
-from operator import truediv
-
-
 class Nodo:
     def __init__(self, dado = 0, nodo_anterior = None):
         self.dado = dado
