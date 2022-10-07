@@ -1,6 +1,7 @@
 from pilha_classe import Pilha, Nodo
 
 P = Pilha()
+L = Pilha()
 
 print('Pilha vazia: ', P)
 P.remove()
