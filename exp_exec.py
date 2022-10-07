@@ -1,4 +1,4 @@
-from class_exp import verifica
+from exp_classe import verifica
 
 while True:
     exp = str(input('Digite uma expressao aritmetica.: '))

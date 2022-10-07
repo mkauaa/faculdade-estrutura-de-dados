@@ -1,4 +1,4 @@
-from class_pilha import Pilha
+from pilha_classe import Pilha
 
 def verifica(entrada):
     pilha = Pilha()
