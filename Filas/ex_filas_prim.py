@@ -1,5 +1,5 @@
 from fila_classe import Fila
-from pilha_classe import Pilha
+from Pilhas.pilha_classe import Pilha
 
 fila = Fila()
 pilha = Pilha()
