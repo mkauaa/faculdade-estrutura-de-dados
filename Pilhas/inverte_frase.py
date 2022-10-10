@@ -1,5 +1,9 @@
+import sys
+sys.path.append(".")
+
 import re
-from pilha_classe import Pilha
+
+from Classes.pilha_classe import Pilha
 
 frase = str(input('Digite uma frase: '))
 

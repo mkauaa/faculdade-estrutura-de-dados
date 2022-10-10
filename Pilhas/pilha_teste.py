@@ -1,4 +1,7 @@
-from Classes.pilha_classe import Pilha, Nodo
+import sys
+sys.path.append(".")
+
+from Classes.pilha_classe import Pilha
 
 P = Pilha()
 L = Pilha()

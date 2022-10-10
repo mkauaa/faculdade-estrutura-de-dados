@@ -1,4 +1,7 @@
-from pilha_classe import Pilha
+import sys
+sys.path.append(".")
+
+from Classes.pilha_classe import Pilha
 
 def verifica(entrada):
     pilha = Pilha()
