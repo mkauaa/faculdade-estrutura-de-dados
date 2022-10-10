@@ -1,4 +1,4 @@
-from pilha_classe import Pilha, Nodo
+from Classes.pilha_classe import Pilha, Nodo
 
 P = Pilha()
 L = Pilha()
