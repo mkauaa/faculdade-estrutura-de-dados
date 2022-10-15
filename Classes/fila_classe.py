@@ -10,6 +10,7 @@ class Fila:
   def __init__(self):
       self.cabeca = None
       self.cauda = None
+      self.tamanho = 0
       
   def __repr__(self):
       return "[" + str(self.cabeca) + "]"
@@ -31,6 +32,8 @@ class Fila:
     else:
       self.cauda.proximo = novo_nodo
       self.cauda = novo_nodo
+
+    self.tamanho += 1
       
   def remove(self):
     removido = self.cabeca.dado
@@ -40,4 +43,49 @@ class Fila:
       self.cauda = None
       
     return removido
-  
+
+  def igual(self, f2):
+    if self.tamanho != f2.tamanho:
+        if self.tamanho > f2.tamanho:
+            return ('F1 > F2')
+        if self.tamanho < f2.tamanho:
+            return ('F1 < F2')
+      
+    else:
+        no_atual1 = self.cabeca
+        no_atual2 = f2.cabeca
+        
+        while (no_atual1) != None:
+            if (no_atual1.dado != no_atual2.dado):
+                return False
+            
+            no_atual1 = no_atual1.proximo
+            no_atual2 = no_atual2.proximo
+        
+        return True
+
+  def impares(self):
+    impar = 0
+    no_atual = self.cabeca
+
+    while (no_atual) != None:
+
+        if no_atual.dado % 2 != 0:
+            impar += 1
+
+        no_atual = no_atual.proximo
+    
+    return impar
+
+  def pares(self):
+    par = 0
+    no_atual = self.cabeca
+
+    while (no_atual) != None:
+
+        if no_atual.dado % 2 == 0:
+            par += 1
+
+        no_atual = no_atual.proximo
+    
+    return par
