@@ -52,15 +52,15 @@ class Fila:
             return ('F1 < F2')
       
     else:
-        no_atual1 = self.cabeca
-        no_atual2 = f2.cabeca
+        atual1 = self.cabeca
+        atual2 = f2.cabeca
         
-        while (no_atual1) != None:
-            if (no_atual1.dado != no_atual2.dado):
+        while atual1 != None:
+            if atual1.dado != atual2.dado:
                 return False
             
-            no_atual1 = no_atual1.proximo
-            no_atual2 = no_atual2.proximo
+            atual1 = atual1.proximo
+            atual2 = atual2.proximo
         
         return True
 
@@ -68,7 +68,7 @@ class Fila:
     impar = 0
     no_atual = self.cabeca
 
-    while (no_atual) != None:
+    while no_atual != None:
 
         if no_atual.dado % 2 != 0:
             impar += 1
@@ -81,7 +81,7 @@ class Fila:
     par = 0
     no_atual = self.cabeca
 
-    while (no_atual) != None:
+    while no_atual != None:
 
         if no_atual.dado % 2 == 0:
             par += 1

@@ -2,7 +2,6 @@ import sys
 sys.path.append(".")
 
 from Classes.fila_classe import Fila
-from Classes.pilha_classe import Pilha
 
 def uniaoCrescente(f1, f2):
     f3 = Fila()
@@ -21,6 +20,7 @@ def uniaoCrescente(f1, f2):
         f3.insere(f2.remove())
 
     return f3
+
 
 fila = Fila()
 
