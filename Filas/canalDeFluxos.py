@@ -20,7 +20,7 @@ while True:
 
 i = 0
 while True:
-    valor = int(input(f"Insira o {i+1}º elemento do fluxo 1: "))
+    valor = int(input(f"Insira o {i+1}º elemento do fluxo 2: "))
     f2.insere((valor, 2))
 
     i += 1 
@@ -31,7 +31,7 @@ while True:
 
 i = 0
 while True:
-    valor = int(input(f"Insira o {i+1}º elemento do fluxo 1: "))
+    valor = int(input(f"Insira o {i+1}º elemento do fluxo 3: "))
     f3.insere((valor, 3))
 
     i += 1
