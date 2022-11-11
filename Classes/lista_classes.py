@@ -132,3 +132,7 @@ class Lista:
           
         anterior.proximo = atual.proximo
         self.tamanho -= 1
+       
+  def concatenav2(self, lista2):
+    self.cauda.proximo = lista2.cabeca
+    return self
