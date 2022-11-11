@@ -103,14 +103,14 @@ class Lista:
       return posicao
 
   def inserePosicao(self, novo_dado, posicao):
+    novo_nodo = Nodo(novo_dado)
+    
     if 0 <= posicao <= self.tamanho:
       if posicao == 0:
         self.insereInicio(novo_dado)
-        self.tamanho += 1
       
       elif posicao == (self.tamanho):
         self.insereFim(novo_dado)
-        self.tamanho += 1
 
       else:
         atual = self.cabeca
@@ -120,6 +120,9 @@ class Lista:
           anterior = atual
           atual = atual.proximo
           i += 1
+        
+        novo_nodo.proximo = atual
+        anterior.proximo = novo_nodo
         
         # adaptar a partir daq
         removido = atual.dado
