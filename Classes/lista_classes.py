@@ -136,3 +136,18 @@ class Lista:
   def concatenav2(self, lista2):
     self.cauda.proximo = lista2.cabeca
     return self
+
+  def concatena(self, lista2):
+    listaConc = Lista()
+    atual = self.cabeca
+    while atual != None:
+        listaConc.insereFim(atual.dado)
+        atual = atual.proximo
+
+    atual = lista2.cabeca
+
+    while atual != None:
+        listaConc.insereFim(atual.dado)
+        atual = atual.proximo
+
+    return listaConc
