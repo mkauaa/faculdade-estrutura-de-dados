@@ -103,6 +103,8 @@ class Lista:
       return posicao
 
   def inserePosicao(self, novo_dado, posicao):
+    novo_nodo = Nodo(novo_dado)
+    
     if 0 <= posicao <= self.tamanho:
       if posicao == 0:
         self.insereInicio(novo_dado)
@@ -118,3 +120,34 @@ class Lista:
           anterior = atual
           atual = atual.proximo
           i += 1
+        
+        novo_nodo.proximo = atual
+        anterior.proximo = novo_nodo
+        
+        # adaptar a partir daq
+        removido = atual.dado
+        
+        if atual == self.cauda:
+          self.cauda = anterior
+          
+        anterior.proximo = atual.proximo
+        self.tamanho -= 1
+       
+  def concatenav2(self, lista2):
+    self.cauda.proximo = lista2.cabeca
+    return self
+
+  def concatena(self, lista2):
+    listaConc = Lista()
+    atual = self.cabeca
+    while atual != None:
+        listaConc.insereFim(atual.dado)
+        atual = atual.proximo
+
+    atual = lista2.cabeca
+
+    while atual != None:
+        listaConc.insereFim(atual.dado)
+        atual = atual.proximo
+
+    return listaConc
