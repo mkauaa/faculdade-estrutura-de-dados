@@ -23,6 +23,6 @@ print(f'A lista tem {lista.tamanho} elementos.')
 
 print(f'Procurando o elemento "4"... \nAchei! Na posição {lista.busca(4)}')
 
-lista.inserePosicao(99, 2)
+lista.inserePosicao(99, 1)
 
 print(lista)

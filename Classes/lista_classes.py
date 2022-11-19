@@ -106,11 +106,9 @@ class Lista:
     if 0 <= posicao <= self.tamanho:
       if posicao == 0:
         self.insereInicio(novo_dado)
-        self.tamanho += 1
       
       elif posicao == (self.tamanho):
         self.insereFim(novo_dado)
-        self.tamanho += 1
 
       else:
         atual = self.cabeca
@@ -120,12 +118,3 @@ class Lista:
           anterior = atual
           atual = atual.proximo
           i += 1
-        
-        # adaptar a partir daq
-        removido = atual.dado
-        
-        if atual == self.cauda:
-          self.cauda = anterior
-          
-        anterior.proximo = atual.proximo
-        self.tamanho -= 1
